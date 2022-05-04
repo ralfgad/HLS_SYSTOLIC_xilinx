@@ -1,0 +1,8 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../test_dataflow_modelo18.cpp in debug mode
+   Generating csim.exe
+PASSED
+The maximum depth reached by any of the 29 hls::stream() instances in the design is 16
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

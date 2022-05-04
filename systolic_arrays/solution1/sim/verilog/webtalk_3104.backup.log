@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May  4 09:49:36 2022
+# Process ID: 3104
+# Current directory: /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/sim/verilog/xsim.dir/MVM_opcion7_super_mejorada/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/sim/verilog/webtalk.log
+# Journal file: /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/sim/verilog/xsim.dir/MVM_opcion7_super_mejorada/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May  4 09:49:36 2022...

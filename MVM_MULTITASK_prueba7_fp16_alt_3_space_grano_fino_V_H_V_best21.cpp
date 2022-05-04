@@ -4,16 +4,16 @@
 //si que va y las layer tienen argumentos
 //voy a ver si puedo quitar el buffer del streaming
 //voy a intentar un stream loop en la primera capa
-//añado las tres capas
+//aï¿½ado las tres capas
 //lo hago fp16
 //trabajo con memorias embebidas a 64 bits
 //TRASPONGO B2 POR SOFTWARE NO EN EL COMPONENTE
 
 
 //solucion de referencia con la que relleno los datos del articulo de supercomputing
-//las versiones 22 23 y 24 son para reducir el tamaño para intentar meterlo en una de1soc
+//las versiones 22 23 y 24 son para reducir el tamaï¿½o para intentar meterlo en una de1soc
 
-//características importantes
+//caracterï¿½sticas importantes
 
 //block_size 8
 //capa vertical primera utilizando parejas de valores

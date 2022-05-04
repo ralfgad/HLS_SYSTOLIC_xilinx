@@ -1,0 +1,1346 @@
+INFO-FLOW: Workspace /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1 opened at Wed May 04 09:43:02 CEST 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.75 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 1.02 sec.
+Execute     import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.55 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.78 sec.
+Execute     import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.16 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.38 sec.
+Execute     set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/opt/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/opt/Xilinx/Vivado/2020.2/data:/opt/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 7.68 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -speed slow 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_library_info -library zynq_slow 
+Execute         config_library_info -family zynq 
+Execute         config_library_info -part xc7z020:-clg400:-1 
+Execute         import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.18 sec.
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.3 sec.
+Command       add_library done; 0.5 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 8.29 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -speed slow 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 10.62 sec.
+Execute   set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/opt/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/opt/Xilinx/Vivado/2020.2/data:/opt/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -speed slow 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_library_info -library zynq_slow 
+Execute       config_library_info -family zynq 
+Execute       config_library_info -part xc7z020:-clg400:-1 
+Execute       import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.25 sec.
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.39 sec.
+Command     add_library done; 0.48 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.61 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   source ./systolic_arrays/solution1/directives.tcl 
+Execute     set_directive_top -name MVM_opcion7_super_mejorada MVM_opcion7_super_mejorada 
+INFO: [HLS 200-1510] Running: set_directive_top -name MVM_opcion7_super_mejorada MVM_opcion7_super_mejorada 
+INFO-FLOW: Setting directive 'TOP' name=MVM_opcion7_super_mejorada 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 92.162 MB.
+INFO: [HLS 200-10] Analyzing design file 'data_flow_example2_prueba1.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling data_flow_example2_prueba1.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang data_flow_example2_prueba1.cpp -foptimization-record-file=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang.data_flow_example2_prueba1.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.pp.0.cpp > /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang.data_flow_example2_prueba1.cpp.out.log 2> /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang.data_flow_example2_prueba1.cpp.err.log 
+Command       ap_eval done; 1.24 sec.
+INFO-FLOW: Done: GCC PP 39 time: 1.3 seconds per iteration
+Execute       set_directive_top MVM_opcion7_super_mejorada -name=MVM_opcion7_super_mejorada 
+INFO-FLOW: Setting directive 'TOP' name=MVM_opcion7_super_mejorada 
+INFO-FLOW: Setting directive 'TOP' name=MVM_opcion7_super_mejorada 
+INFO-FLOW: Setting directive 'TOP' name=MVM_opcion7_super_mejorada 
+INFO-FLOW: Setting directive 'TOP' name=MVM_opcion7_super_mejorada 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=MVM_opcion7_super_mejorada 
+INFO-FLOW: Setting directive 'TOP' name=MVM_opcion7_super_mejorada 
+Execute       list_core -type functional_unit 
+Execute       clang_tidy xilinx-systemc-detector /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/.systemc_flag -fix-errors /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 10.12 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.pp.0.cpp std=gnu++14 -target fpga  -directive=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/all.directive.json -fix-errors /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 7 sec.
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 11.62 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 18.6 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang-tidy.data_flow_example2_prueba1.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang-tidy.data_flow_example2_prueba1.pp.0.cpp.out.log 2> /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang-tidy.data_flow_example2_prueba1.pp.0.cpp.err.log 
+Command         ap_eval done; 7.76 sec.
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command       clang_tidy done; 8.3 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/xilinx-dataflow-lawyer.data_flow_example2_prueba1.pp.0.cpp.diag.yml /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/xilinx-dataflow-lawyer.data_flow_example2_prueba1.pp.0.cpp.out.log 2> /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/xilinx-dataflow-lawyer.data_flow_example2_prueba1.pp.0.cpp.err.log 
+Command       ap_eval done; 4.63 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang.data_flow_example2_prueba1.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.bc > /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang.data_flow_example2_prueba1.pp.0.cpp.out.log 2> /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang.data_flow_example2_prueba1.pp.0.cpp.err.log 
+Command       ap_eval done; 4.3 sec.
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 41.6 seconds. CPU system time: 2.35 seconds. Elapsed time: 47.46 seconds; current allocated memory: 94.584 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.0.bc -args  "/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.g.bc"  
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/data_flow_example2_prueba1.g.bc -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.0.bc > /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.1.lower.bc -args /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.1.lower.bc > /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+Command         ap_eval done; 0.17 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.17 sec.
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.2.m1.bc -args /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.2.m1.bc > /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command         ap_eval done; 4.07 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 4.07 sec.
+Execute       run_link_or_opt -opt -out /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=MVM_opcion7_super_mejorada -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=MVM_opcion7_super_mejorada -reflow-float-conversion -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.3.fpc.bc > /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command         ap_eval done; 1.51 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.51 sec.
+Execute       run_link_or_opt -out /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.4.m2.bc -args /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.4.m2.bc > /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+Command         ap_eval done; 0.15 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.15 sec.
+Execute       run_link_or_opt -opt -out /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=MVM_opcion7_super_mejorada 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=MVM_opcion7_super_mejorada -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.5.gdce.bc > /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pipeline_style 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=MVM_opcion7_super_mejorada -mllvm -hls-db-dir -mllvm /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -x ir /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.lto.bc > /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command       ap_eval done; 0.23 sec.
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'producer(hls::stream<float, 0>&, hls::stream<float, 0>&, float*, float*, int, int)' (data_flow_example2_prueba1.cpp:16:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'producer(hls::stream<float, 0>&, hls::stream<float, 0>&, float*, float*, int, int)' (data_flow_example2_prueba1.cpp:17:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read(float&)' into 'hls::stream<float, 0>::read()' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'layer1(hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&, int, int)' (data_flow_example2_prueba1.cpp:44:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read()' into 'layer1(hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&, int, int)' (data_flow_example2_prueba1.cpp:39:18)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read()' into 'layer1(hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&, int, int)' (data_flow_example2_prueba1.cpp:38:17)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read()' into 'consumer(hls::stream<float, 0>&, float*, int)' (data_flow_example2_prueba1.cpp:54:22)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::stream()' into 'MVM_opcion7_super_mejorada(float*, float*, float*, int, int)' (data_flow_example2_prueba1.cpp:72:22)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::stream()' into 'MVM_opcion7_super_mejorada(float*, float*, float*, int, int)' (data_flow_example2_prueba1.cpp:74:22)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::stream()' into 'MVM_opcion7_super_mejorada(float*, float*, float*, int, int)' (data_flow_example2_prueba1.cpp:75:22)
+INFO: [HLS 214-178] Inlining function 'tanh_soft(float)' into 'layer1(hls::stream<float, 0>&, hls::stream<float, 0>&, hls::stream<float, 0>&, int, int)' (data_flow_example2_prueba1.cpp:25:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'MVM_opcion7_super_mejorada(float*, float*, float*, int, int)' (data_flow_example2_prueba1.cpp:61:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'MVM_opcion7_super_mejorada(float*, float*, float*, int, int)' (data_flow_example2_prueba1.cpp:61:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'MVM_opcion7_super_mejorada(float*, float*, float*, int, int)' (data_flow_example2_prueba1.cpp:61:0)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'VITIS_LOOP_53_1'(data_flow_example2_prueba1.cpp:53:19) has been inferred on port 'gmem' (data_flow_example2_prueba1.cpp:53:19)
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 5.88 seconds. CPU system time: 0.46 seconds. Elapsed time: 6.52 seconds; current allocated memory: 96.167 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 96.168 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top MVM_opcion7_super_mejorada -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.0.bc -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.14 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.14 seconds; current allocated memory: 102.814 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.1.bc -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.21 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.26 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 110.942 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.g.1.bc to /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.o.1.bc -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_1' (data_flow_example2_prueba1.cpp:53) in function 'consumer' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_37_2' (data_flow_example2_prueba1.cpp:37) in function 'layer1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_15_2' (data_flow_example2_prueba1.cpp:15) in function 'producer' automatically.
+WARNING: [HLS 200-805] An internal stream 'layer1_layer2' (data_flow_example2_prueba1.cpp:72) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'a' (data_flow_example2_prueba1.cpp:74) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'b1' (data_flow_example2_prueba1.cpp:75) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'MVM_opcion7_super_mejorada' (data_flow_example2_prueba1.cpp:61)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'MVM_opcion7_super_mejorada' (data_flow_example2_prueba1.cpp:61), detected/extracted 3 process function(s): 
+	 'producer3'
+	 'layer1'
+	 'consumer'.
+Command         transform done; 0.38 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.23 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.6 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.62 seconds; current allocated memory: 140.070 MB.
+Execute         get_config_compile -enable_loop_extract 
+Execute         get_config_compile -disable_auto_rewind 
+Execute         get_config_compile -enable_auto_rewind 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.o.2.bc -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_13_1' (data_flow_example2_prueba1.cpp:13:28) in function 'producer3'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_35_1' (data_flow_example2_prueba1.cpp:35:35) in function 'layer1' the outer loop is not a perfect loop because there is nontrivial logic in the loop latch.
+Command         transform done; 0.44 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.41 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.44 seconds; current allocated memory: 167.412 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 1.47 sec.
+Command     elaborate done; 55.47 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'MVM_opcion7_super_mejorada' ...
+Execute       ap_set_top_model MVM_opcion7_super_mejorada 
+Execute       get_model_list MVM_opcion7_super_mejorada -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model MVM_opcion7_super_mejorada 
+Execute       preproc_iomode -model consumer 
+Execute       preproc_iomode -model layer1 
+Execute       preproc_iomode -model producer3 
+Execute       get_model_list MVM_opcion7_super_mejorada -filter all-wo-channel 
+INFO-FLOW: Model list for configure: producer3 layer1 consumer MVM_opcion7_super_mejorada
+INFO-FLOW: Configuring Module : producer3 ...
+Execute       set_default_model producer3 
+Execute       apply_spec_resource_limit producer3 
+INFO-FLOW: Configuring Module : layer1 ...
+Execute       set_default_model layer1 
+Execute       apply_spec_resource_limit layer1 
+INFO-FLOW: Configuring Module : consumer ...
+Execute       set_default_model consumer 
+Execute       apply_spec_resource_limit consumer 
+INFO-FLOW: Configuring Module : MVM_opcion7_super_mejorada ...
+Execute       set_default_model MVM_opcion7_super_mejorada 
+Execute       apply_spec_resource_limit MVM_opcion7_super_mejorada 
+INFO-FLOW: Model list for preprocess: producer3 layer1 consumer MVM_opcion7_super_mejorada
+INFO-FLOW: Preprocessing Module: producer3 ...
+Execute       set_default_model producer3 
+Execute       cdfg_preprocess -model producer3 
+Execute       rtl_gen_preprocess producer3 
+INFO-FLOW: Preprocessing Module: layer1 ...
+Execute       set_default_model layer1 
+Execute       cdfg_preprocess -model layer1 
+Execute       rtl_gen_preprocess layer1 
+INFO-FLOW: Preprocessing Module: consumer ...
+Execute       set_default_model consumer 
+Execute       cdfg_preprocess -model consumer 
+Execute       rtl_gen_preprocess consumer 
+INFO-FLOW: Preprocessing Module: MVM_opcion7_super_mejorada ...
+Execute       set_default_model MVM_opcion7_super_mejorada 
+Execute       cdfg_preprocess -model MVM_opcion7_super_mejorada 
+Execute       rtl_gen_preprocess MVM_opcion7_super_mejorada 
+WARNING: [SYN 201-107] Renaming port name 'MVM_opcion7_super_mejorada/output' to 'MVM_opcion7_super_mejorada/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO-FLOW: Model list for synthesis: producer3 layer1 consumer MVM_opcion7_super_mejorada
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'producer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model producer3 
+Execute       schedule -model producer3 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_13_1_VITIS_LOOP_15_2'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 13, loop 'VITIS_LOOP_13_1_VITIS_LOOP_15_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 167.883 MB.
+Execute       syn_report -verbosereport -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.sched.adb -f 
+INFO-FLOW: Finish scheduling producer3.
+Execute       set_default_model producer3 
+Execute       bind -model producer3 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 168.312 MB.
+Execute       syn_report -verbosereport -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.12 sec.
+Execute       db_write -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.bind.adb -f 
+INFO-FLOW: Finish binding producer3.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model layer1 
+Execute       schedule -model layer1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_37_2'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'fadd' operation ('temp', data_flow_example2_prueba1.cpp:41->data_flow_example2_prueba1.cpp:61) and 'fadd' operation ('temp', data_flow_example2_prueba1.cpp:41->data_flow_example2_prueba1.cpp:61).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 2) between 'fadd' operation ('temp', data_flow_example2_prueba1.cpp:41->data_flow_example2_prueba1.cpp:61) and 'fadd' operation ('temp', data_flow_example2_prueba1.cpp:41->data_flow_example2_prueba1.cpp:61).
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 3) between 'fadd' operation ('temp', data_flow_example2_prueba1.cpp:41->data_flow_example2_prueba1.cpp:61) and 'fadd' operation ('temp', data_flow_example2_prueba1.cpp:41->data_flow_example2_prueba1.cpp:61).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 4, Depth = 11, loop 'VITIS_LOOP_37_2'
+WARNING: [HLS 200-871] Estimated clock period (14.512ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
+WARNING: [HLS 200-1016] The critical path in module 'layer1' consists of the following:	'fadd' operation ('temp', data_flow_example2_prueba1.cpp:41->data_flow_example2_prueba1.cpp:61) [44]  (7.26 ns)
+	'phi' operation ('temp') with incoming values : ('temp', data_flow_example2_prueba1.cpp:41->data_flow_example2_prueba1.cpp:61) [30]  (0 ns)
+	'fadd' operation ('temp', data_flow_example2_prueba1.cpp:41->data_flow_example2_prueba1.cpp:61) [44]  (7.26 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.35 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.47 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.48 seconds; current allocated memory: 168.691 MB.
+Execute       syn_report -verbosereport -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.47 sec.
+Execute       db_write -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.sched.adb -f 
+INFO-FLOW: Finish scheduling layer1.
+Execute       set_default_model layer1 
+Execute       bind -model layer1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.16 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.63 seconds. CPU system time: 0 seconds. Elapsed time: 0.63 seconds; current allocated memory: 169.199 MB.
+Execute       syn_report -verbosereport -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.25 sec.
+Execute       db_write -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.bind.adb -f 
+INFO-FLOW: Finish binding layer1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'consumer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model consumer 
+Execute       schedule -model consumer 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_53_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_53_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.32 seconds. CPU system time: 0 seconds. Elapsed time: 0.33 seconds; current allocated memory: 169.371 MB.
+Execute       syn_report -verbosereport -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.sched.adb -f 
+INFO-FLOW: Finish scheduling consumer.
+Execute       set_default_model consumer 
+Execute       bind -model consumer 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 169.584 MB.
+Execute       syn_report -verbosereport -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.bind.adb -f 
+INFO-FLOW: Finish binding consumer.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MVM_opcion7_super_mejorada' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model MVM_opcion7_super_mejorada 
+Execute       schedule -model MVM_opcion7_super_mejorada 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 169.716 MB.
+Execute       syn_report -verbosereport -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.sched.adb -f 
+INFO-FLOW: Finish scheduling MVM_opcion7_super_mejorada.
+Execute       set_default_model MVM_opcion7_super_mejorada 
+Execute       bind -model MVM_opcion7_super_mejorada 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.12 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 170.062 MB.
+Execute       syn_report -verbosereport -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.bind.adb -f 
+INFO-FLOW: Finish binding MVM_opcion7_super_mejorada.
+Execute       get_model_list MVM_opcion7_super_mejorada -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess producer3 
+Execute       rtl_gen_preprocess layer1 
+Execute       rtl_gen_preprocess consumer 
+Execute       rtl_gen_preprocess MVM_opcion7_super_mejorada 
+INFO-FLOW: Model list for RTL generation: producer3 layer1 consumer MVM_opcion7_super_mejorada
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'producer3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model producer3 -top_prefix MVM_opcion7_super_mejorada_ -sub_prefix MVM_opcion7_super_mejorada_ -mg_file /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_62_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'producer3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 170.891 MB.
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute       gen_rtl producer3 -style xilinx -f -lang vhdl -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/vhdl/MVM_opcion7_super_mejorada_producer3 
+Execute       gen_rtl producer3 -style xilinx -f -lang vlog -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/verilog/MVM_opcion7_super_mejorada_producer3 
+Execute       syn_report -csynth -model producer3 -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/report/producer3_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model producer3 -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/report/producer3_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model producer3 -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.12 sec.
+Execute       db_write -model producer3 -f -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.adb 
+Execute       gen_tb_info producer3 -p /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model layer1 -top_prefix MVM_opcion7_super_mejorada_ -sub_prefix MVM_opcion7_super_mejorada_ -mg_file /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_59_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dexp_64ns_64ns_64_21_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dsub_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'layer1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.36 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.38 seconds; current allocated memory: 173.462 MB.
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute       gen_rtl layer1 -style xilinx -f -lang vhdl -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/vhdl/MVM_opcion7_super_mejorada_layer1 
+Execute       gen_rtl layer1 -style xilinx -f -lang vlog -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/verilog/MVM_opcion7_super_mejorada_layer1 
+Execute       syn_report -csynth -model layer1 -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/report/layer1_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model layer1 -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/report/layer1_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model layer1 -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.31 sec.
+Execute       db_write -model layer1 -f -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.adb 
+Execute       gen_tb_info layer1 -p /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'consumer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model consumer -top_prefix MVM_opcion7_super_mejorada_ -sub_prefix MVM_opcion7_super_mejorada_ -mg_file /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'consumer'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.48 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.5 seconds; current allocated memory: 175.055 MB.
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute       gen_rtl consumer -style xilinx -f -lang vhdl -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/vhdl/MVM_opcion7_super_mejorada_consumer 
+Execute       gen_rtl consumer -style xilinx -f -lang vlog -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/verilog/MVM_opcion7_super_mejorada_consumer 
+Execute       syn_report -csynth -model consumer -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/report/consumer_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model consumer -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/report/consumer_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model consumer -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model consumer -f -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.adb 
+Execute       gen_tb_info consumer -p /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MVM_opcion7_super_mejorada' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model MVM_opcion7_super_mejorada -top_prefix  -sub_prefix MVM_opcion7_super_mejorada_ -mg_file /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MVM_opcion7_super_mejorada/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MVM_opcion7_super_mejorada/input1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MVM_opcion7_super_mejorada/input2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MVM_opcion7_super_mejorada/output_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MVM_opcion7_super_mejorada/MM' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'MVM_opcion7_super_mejorada/NN' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MVM_opcion7_super_mejorada' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input1', 'input2', 'output_r', 'MM', 'NN' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MVM_opcion7_super_mejorada'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 176.788 MB.
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute       gen_rtl MVM_opcion7_super_mejorada -istop -style xilinx -f -lang vhdl -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/vhdl/MVM_opcion7_super_mejorada 
+Execute       gen_rtl MVM_opcion7_super_mejorada -istop -style xilinx -f -lang vlog -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/verilog/MVM_opcion7_super_mejorada 
+Execute       syn_report -csynth -model MVM_opcion7_super_mejorada -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/report/MVM_opcion7_super_mejorada_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model MVM_opcion7_super_mejorada -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/report/MVM_opcion7_super_mejorada_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model MVM_opcion7_super_mejorada -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.14 sec.
+Execute       db_write -model MVM_opcion7_super_mejorada -f -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.adb 
+Execute       gen_tb_info MVM_opcion7_super_mejorada -p /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada 
+Execute       export_constraint_db -f -tool general -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.constraint.tcl 
+Execute       syn_report -designview -model MVM_opcion7_super_mejorada -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.design.xml 
+Command       syn_report done; 0.23 sec.
+Execute       syn_report -csynthDesign -model MVM_opcion7_super_mejorada -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model MVM_opcion7_super_mejorada -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model MVM_opcion7_super_mejorada -o /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks MVM_opcion7_super_mejorada 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain MVM_opcion7_super_mejorada 
+INFO-FLOW: Model list for RTL component generation: producer3 layer1 consumer MVM_opcion7_super_mejorada
+INFO-FLOW: Handling components in module [producer3] ... 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.compgen.tcl 
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_mul_32ns_32ns_64_2_1.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_mul_32ns_32ns_64_2_1
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_mul_32ns_32ns_62_2_1.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_mul_32ns_32ns_62_2_1
+INFO-FLOW: Handling components in module [layer1] ... 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.compgen.tcl 
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_fadd_32ns_32ns_32_5_full_dsp_1.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_fmul_32ns_32ns_32_4_max_dsp_1.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_fptrunc_64ns_32_2_no_dsp_1.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_fptrunc_64ns_32_2_no_dsp_1
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_fpext_32ns_64_2_no_dsp_1.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_fpext_32ns_64_2_no_dsp_1
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_dsub_64ns_64ns_64_7_full_dsp_1.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_dsub_64ns_64ns_64_7_full_dsp_1
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_dadd_64ns_64ns_64_7_full_dsp_1.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_dadd_64ns_64ns_64_7_full_dsp_1
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_ddiv_64ns_64ns_64_59_no_dsp_1.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_ddiv_64ns_64ns_64_59_no_dsp_1
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_dexp_64ns_64ns_64_21_full_dsp_1.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_dexp_64ns_64ns_64_21_full_dsp_1
+INFO-FLOW: Handling components in module [consumer] ... 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.compgen.tcl 
+INFO-FLOW: Handling components in module [MVM_opcion7_super_mejorada] ... 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.compgen.tcl 
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_fifo_w32_d2_S.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_fifo_w32_d2_S.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_fifo_w32_d2_S.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_fifo_w32_d2_S.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_fifo_w64_d3_S.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_fifo_w64_d3_S
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_fifo_w32_d2_S.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_fifo_w32_d2_S.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_start_for_layer1_U0.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_start_for_layer1_U0
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_start_for_consumer_U0.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_start_for_consumer_U0
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_control_s_axi.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_control_s_axi
+INFO-FLOW: Found component MVM_opcion7_super_mejorada_gmem_m_axi.
+INFO-FLOW: Append model MVM_opcion7_super_mejorada_gmem_m_axi
+INFO-FLOW: Append model producer3
+INFO-FLOW: Append model layer1
+INFO-FLOW: Append model consumer
+INFO-FLOW: Append model MVM_opcion7_super_mejorada
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: MVM_opcion7_super_mejorada_mul_32ns_32ns_64_2_1 MVM_opcion7_super_mejorada_mul_32ns_32ns_62_2_1 MVM_opcion7_super_mejorada_fadd_32ns_32ns_32_5_full_dsp_1 MVM_opcion7_super_mejorada_fmul_32ns_32ns_32_4_max_dsp_1 MVM_opcion7_super_mejorada_fptrunc_64ns_32_2_no_dsp_1 MVM_opcion7_super_mejorada_fpext_32ns_64_2_no_dsp_1 MVM_opcion7_super_mejorada_dsub_64ns_64ns_64_7_full_dsp_1 MVM_opcion7_super_mejorada_dadd_64ns_64ns_64_7_full_dsp_1 MVM_opcion7_super_mejorada_ddiv_64ns_64ns_64_59_no_dsp_1 MVM_opcion7_super_mejorada_dexp_64ns_64ns_64_21_full_dsp_1 MVM_opcion7_super_mejorada_fifo_w32_d2_S MVM_opcion7_super_mejorada_fifo_w32_d2_S MVM_opcion7_super_mejorada_fifo_w32_d2_S MVM_opcion7_super_mejorada_fifo_w32_d2_S MVM_opcion7_super_mejorada_fifo_w64_d3_S MVM_opcion7_super_mejorada_fifo_w32_d2_S MVM_opcion7_super_mejorada_fifo_w32_d2_S MVM_opcion7_super_mejorada_start_for_layer1_U0 MVM_opcion7_super_mejorada_start_for_consumer_U0 MVM_opcion7_super_mejorada_control_s_axi MVM_opcion7_super_mejorada_gmem_m_axi producer3 layer1 consumer MVM_opcion7_super_mejorada
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_mul_32ns_32ns_64_2_1
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_mul_32ns_32ns_62_2_1
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_fptrunc_64ns_32_2_no_dsp_1
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_fpext_32ns_64_2_no_dsp_1
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_dsub_64ns_64ns_64_7_full_dsp_1
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_dadd_64ns_64ns_64_7_full_dsp_1
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_ddiv_64ns_64ns_64_59_no_dsp_1
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_dexp_64ns_64ns_64_21_full_dsp_1
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_fifo_w64_d3_S
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_fifo_w32_d2_S
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_start_for_layer1_U0
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_start_for_consumer_U0
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_control_s_axi
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada_gmem_m_axi
+INFO-FLOW: To file: write model producer3
+INFO-FLOW: To file: write model layer1
+INFO-FLOW: To file: write model consumer
+INFO-FLOW: To file: write model MVM_opcion7_super_mejorada
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): MVM_opcion7_super_mejorada
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.13 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'MVM_opcion7_super_mejorada_mul_32ns_32ns_64_2_1_Multiplier_0'
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'MVM_opcion7_super_mejorada_mul_32ns_32ns_62_2_1_Multiplier_1'
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.35 sec.
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.compgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'a_U(MVM_opcion7_super_mejorada_fifo_w32_d2_S)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'b1_U(MVM_opcion7_super_mejorada_fifo_w32_d2_S)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'MM_c_U(MVM_opcion7_super_mejorada_fifo_w32_d2_S)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'NN_c_U(MVM_opcion7_super_mejorada_fifo_w32_d2_S)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'output_c_U(MVM_opcion7_super_mejorada_fifo_w64_d3_S)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'layer1_layer2_U(MVM_opcion7_super_mejorada_fifo_w32_d2_S)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'MM_c9_U(MVM_opcion7_super_mejorada_fifo_w32_d2_S)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_layer1_U0_U(MVM_opcion7_super_mejorada_start_for_layer1_U0)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_consumer_U0_U(MVM_opcion7_super_mejorada_start_for_consumer_U0)' using Shift Registers.
+Execute         source ./control.slave.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.42 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.16 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.14 sec.
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=MVM_opcion7_super_mejorada xml_exists=0
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.compgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.33 sec.
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.compgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.compgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.compgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.compgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.12 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.compgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.compgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.compgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.constraint.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=6
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=25 #gSsdmPorts=0
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.compgen.dataonly.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.compgen.dataonly.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/producer3.tbgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/layer1.tbgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/consumer.tbgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.constraint.tcl 
+Execute       sc_get_clocks MVM_opcion7_super_mejorada 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/impl/misc/MVM_opcion7_super_mejorada_ap_dadd_5_full_dsp_64_ip.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/impl/misc/MVM_opcion7_super_mejorada_ap_ddiv_57_no_dsp_64_ip.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/impl/misc/MVM_opcion7_super_mejorada_ap_dexp_19_full_dsp_64_ip.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/impl/misc/MVM_opcion7_super_mejorada_ap_dsub_5_full_dsp_64_ip.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/impl/misc/MVM_opcion7_super_mejorada_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/impl/misc/MVM_opcion7_super_mejorada_ap_fmul_2_max_dsp_32_ip.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/impl/misc/MVM_opcion7_super_mejorada_ap_fpext_0_no_dsp_32_ip.tcl 
+Execute       source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/impl/misc/MVM_opcion7_super_mejorada_ap_fptrunc_0_no_dsp_64_ip.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3.12 seconds. CPU system time: 0.16 seconds. Elapsed time: 3.29 seconds; current allocated memory: 186.397 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for MVM_opcion7_super_mejorada.
+INFO: [VLOG 209-307] Generating Verilog RTL for MVM_opcion7_super_mejorada.
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.design.xml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report json2reportxml
+Execute       send_msg_by_id INFO @200-1603@%s  and missed bursts 
+INFO: [HLS 200-1603] Design has MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
+Execute       syn_report -model MVM_opcion7_super_mejorada -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 68.91 MHz
+Command     autosyn done; 6.91 sec.
+Command   csynth_design done; 62.4 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 55.54 seconds. CPU system time: 3.11 seconds. Elapsed time: 62.4 seconds; current allocated memory: 187.482 MB.
+Command ap_source done; 73.77 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1 opened at Wed May 04 09:46:24 CEST 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.11 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.17 sec.
+Execute     import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+Execute     set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/opt/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/opt/Xilinx/Vivado/2020.2/data:/opt/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 1.71 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -speed slow 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_library_info -library zynq_slow 
+Execute         config_library_info -family zynq 
+Execute         config_library_info -part xc7z020:-clg400:-1 
+Execute         import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.13 sec.
+Command       add_library done; 0.22 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.97 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -speed slow 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 2.34 sec.
+Execute   set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/opt/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/opt/Xilinx/Vivado/2020.2/data:/opt/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -speed slow 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_library_info -library zynq_slow 
+Execute       config_library_info -family zynq 
+Execute       config_library_info -part xc7z020:-clg400:-1 
+Execute       import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynq/zynq 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.13 sec.
+Command     add_library done; 0.17 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.2 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   source ./systolic_arrays/solution1/directives.tcl 
+Execute     set_directive_top -name MVM_opcion7_super_mejorada MVM_opcion7_super_mejorada 
+INFO: [HLS 200-1510] Running: set_directive_top -name MVM_opcion7_super_mejorada MVM_opcion7_super_mejorada 
+INFO-FLOW: Setting directive 'TOP' name=MVM_opcion7_super_mejorada 
+Execute   cosim_design -trace_level all 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.12 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.18 sec.
+Execute     source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.13 sec.
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.19 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: TB processing: /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/test_dataflow_example2.cpp /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/./sim/autowrap/testbench/test_dataflow_example2.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/./sim/autowrap/testbench/test_dataflow_example2.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/./sim/autowrap/testbench/test_dataflow_example2.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 3.73 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: TB processing: /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/data_flow_example2_prueba1.cpp /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/./sim/autowrap/testbench/data_flow_example2_prueba1.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/./sim/autowrap/testbench/data_flow_example2_prueba1.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/./sim/autowrap/testbench/data_flow_example2_prueba1.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 10.79 sec.
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/./sim/autowrap/testbench/tb.status.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.rtl_wrap.cfg.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+WARNING: [COSIM 212-369] AXI_master port 'input1' has a depth of '0'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'input2' has a depth of '0'. Insufficient depth may result in simulation mismatch or freeze.
+WARNING: [COSIM 212-369] AXI_master port 'output' has a depth of '0'. Insufficient depth may result in simulation mismatch or freeze.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.26 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/.autopilot/db/MVM_opcion7_super_mejorada.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 167.77 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command   cosim_design done; 251.81 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 327.5 seconds. CPU system time: 10.72 seconds. Elapsed time: 251.81 seconds; current allocated memory: 103.058 MB.
+Command ap_source done; 254.4 sec.
+Execute cleanup_all 

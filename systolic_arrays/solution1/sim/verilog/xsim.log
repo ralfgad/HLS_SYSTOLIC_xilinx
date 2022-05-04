@@ -1,0 +1,204 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May  4 09:49:39 2022
+# Process ID: 3145
+# Current directory: /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/MVM_opcion7_super_mejorada/xsim_script.tcl}
+# Log file: /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/sim/verilog/xsim.log
+# Journal file: /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/MVM_opcion7_super_mejorada/xsim_script.tcl
+# xsim {MVM_opcion7_super_mejorada} -view {{MVM_opcion7_super_mejorada_dataflow_ana.wcfg}} -tclbatch {MVM_opcion7_super_mejorada.tcl} -protoinst {MVM_opcion7_super_mejorada.protoinst}
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file MVM_opcion7_super_mejorada.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada//AESL_inst_MVM_opcion7_super_mejorada_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/consumer_U0/consumer_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/layer1_U0/layer1_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/producer3_U0/producer3_U0_activity
+Time resolution is 1 ps
+open_wave_config MVM_opcion7_super_mejorada_dataflow_ana.wcfg
+source MVM_opcion7_super_mejorada.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set cinoutgroup [add_wave_group "C InOuts" -into $designtopgroup]
+## set input1__input2__output_group [add_wave_group input1__input2__output(axi_master) -into $cinoutgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $input1__input2__output_group]
+## set wdata_group [add_wave_group "Write Channel" -into $input1__input2__output_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $input1__input2__output_group]
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_BID -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_RID -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARID -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_WID -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWID -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/m_axi_gmem_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## set input1__input2__output_r__MM__NN__return_group [add_wave_group input1__input2__output_r__MM__NN__return(axi_slave) -into $cinoutgroup]
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/interrupt -into $input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_BRESP -into $input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_BREADY -into $input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_BVALID -into $input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_RRESP -into $input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_RDATA -into $input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_RREADY -into $input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_RVALID -into $input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_ARREADY -into $input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_ARVALID -into $input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_ARADDR -into $input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_WSTRB -into $input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_WDATA -into $input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_WREADY -into $input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_WVALID -into $input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_AWREADY -into $input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_AWVALID -into $input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/s_axi_control_AWADDR -into $input1__input2__output_r__MM__NN__return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake(internal)" -into $designtopgroup]
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/ap_done -into $blocksiggroup
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/ap_idle -into $blocksiggroup
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/ap_ready -into $blocksiggroup
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/ap_start -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/LENGTH_gmem -into $tb_portdepth_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/LENGTH_input1 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/LENGTH_input2 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/LENGTH_output_r -into $tb_portdepth_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/LENGTH_MM -into $tb_portdepth_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/LENGTH_NN -into $tb_portdepth_group -radix hex
+## set tbcinoutgroup [add_wave_group "C InOuts" -into $testbenchgroup]
+## set tb_input1__input2__output_group [add_wave_group input1__input2__output(axi_master) -into $tbcinoutgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $tb_input1__input2__output_group]
+## set wdata_group [add_wave_group "Write Channel" -into $tb_input1__input2__output_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $tb_input1__input2__output_group]
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_BID -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_RID -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARID -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_WID -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWID -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/gmem_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## set tb_input1__input2__output_r__MM__NN__return_group [add_wave_group input1__input2__output_r__MM__NN__return(axi_slave) -into $tbcinoutgroup]
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_INTERRUPT -into $tb_input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_BRESP -into $tb_input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_BREADY -into $tb_input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_BVALID -into $tb_input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_RRESP -into $tb_input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_RDATA -into $tb_input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_RREADY -into $tb_input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_RVALID -into $tb_input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_ARREADY -into $tb_input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_ARVALID -into $tb_input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_ARADDR -into $tb_input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_WSTRB -into $tb_input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_WDATA -into $tb_input1__input2__output_r__MM__NN__return_group -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_WREADY -into $tb_input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_WVALID -into $tb_input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_AWREADY -into $tb_input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_AWVALID -into $tb_input1__input2__output_r__MM__NN__return_group -color #ffff00 -radix hex
+## add_wave /apatb_MVM_opcion7_super_mejorada_top/control_AWADDR -into $tb_input1__input2__output_r__MM__NN__return_group -radix hex
+## save_wave_config MVM_opcion7_super_mejorada.wcfg
+## run all
+Warning: DRC warning : CARRYCASCIN can only be used in the current DSP48E1 instance if the previous DSP48E1  is performing a two input ADD or SUBTRACT operation, or the current DSP48E1 is configured in the MAC extend opmode(6:0) equals 1001000. 
+Time: 0 ps  Iteration: 2  Process: /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/layer1_U0/dexp_64ns_64ns_64_21_full_dsp_1_U23/MVM_opcion7_super_mejorada_ap_dexp_19_full_dsp_64_u/inst/i_synth/exp_op/i_sp_or_dp/OP/i_calculate_Xf/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /opt/Xilinx/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: DRC warning : DSP48E1 CARRYINSEL is set to 010 with OPMODEREG set to 0. This causes unknown values after reset occurs. It is suggested to use OPMODEREG = 1 when cascading large adders.
+Time: 0 ps  Iteration: 2  Process: /apatb_MVM_opcion7_super_mejorada_top/AESL_inst_MVM_opcion7_super_mejorada/layer1_U0/dexp_64ns_64ns_64_21_full_dsp_1_U23/MVM_opcion7_super_mejorada_ap_dexp_19_full_dsp_64_u/inst/i_synth/exp_op/i_sp_or_dp/OP/i_calculate_Xf/dsp/two/dsp48e1_add_hi/i_no_versal_es1_workaround/DSP/prcs_carryinsel_drc  File: /opt/Xilinx/Vivado/2020.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "116335000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 116375 ns : File "/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/systolic_arrays/solution1/sim/verilog/MVM_opcion7_super_mejorada.autotb.v" Line 444
+run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:35 . Memory (MB): peak = 2817.539 ; gain = 0.000 ; free physical = 855 ; free virtual = 12253
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed May  4 09:50:38 2022...

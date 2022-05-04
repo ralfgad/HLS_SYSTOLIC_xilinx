@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1651650252465">
+  <ports id="1" name="ss" type="PortType" originalName="ss" coreName="FIFO_SRL" coreId="553138192" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="gmem" type="PortType" coreId="1600417385" bitwidth="32" direction="DirOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="3" name="activacion" type="PortType" coreName="FIFO_SRL" coreId="1388929552" bitwidth="64" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="DESTINO" type="PortType" coreName="FIFO_SRL" coreId="1852391968" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="42" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="45" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="46" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="49" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="50" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="51" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="52" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="55" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="60" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="61" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@ports.1"/>
+  <edges id="62" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="65" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="66" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="67" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="69" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="72" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="77" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="79" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="80" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="83" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="86" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="87" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="90" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="93" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="94" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="236" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="237" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="238" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="239" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="240" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="241" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="242" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="243" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <blocks id="15" name="entry" type="BlockType">
+    <controlOutputObjs>.lr.ph.i</controlOutputObjs>
+    <controlOutputObjs>.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="activacion_read" lineNumber="51" originalName="activacion" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="consumer" bitwidth="64" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="51" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <dataInputObjs>activacion</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="DESTINO_read" lineNumber="51" originalName="DESTINO" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="consumer" bitwidth="32" opcode="read" m_display="0" m_delay="3.63" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="51" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <dataInputObjs>DESTINO</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="icmp_ln53" lineNumber="53" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." rtlName="icmp_ln53_fu_118_p2" opType="icmp" coreId="0" contextFuncName="consumer" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.47" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="br_ln53" lineNumber="53" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreId="0" contextFuncName="consumer" opcode="br" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.exit</controlInputObjs>
+      <controlInputObjs>.lr.ph.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="data_flow_example2_prueba1.cpp">
+      <validLinenumbers>51</validLinenumbers>
+      <validLinenumbers>53</validLinenumbers>
+      <validLinenumbers>61</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="22" name=".lr.ph.i" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_29</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="trunc_ln53" lineNumber="53" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." rtlName="trunc_ln53_fu_144_p1" coreId="49" contextFuncName="consumer" bitwidth="31" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="trunc_ln53_1" lineNumber="53" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." rtlName="trunc_ln53_1_fu_124_p4" coreId="0" contextFuncName="consumer" bitwidth="62" opcode="partselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="sext_ln53" lineNumber="53" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." rtlName="sext_ln53_fu_134_p1" coreId="0" contextFuncName="consumer" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="gmem_addr" lineNumber="53" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreId="132" contextFuncName="consumer" bitwidth="32" opcode="getelementptr" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>gmem</dataOutputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>writeresp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="empty" lineNumber="53" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="writereq" coreId="113" contextFuncName="consumer" bitwidth="1" opcode="writereq" nodeLabel="1.0" m_display="0" m_delay="7.3" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="br_ln53" lineNumber="53" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreId="0" contextFuncName="consumer" opcode="br" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <controlInputObjs>block_29</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="data_flow_example2_prueba1.cpp">
+      <validLinenumbers>53</validLinenumbers>
+      <validLinenumbers>61</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="37" name="._crit_edge.loopexit.i" type="BlockType">
+    <controlInputObjs>block_29</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="empty_26" lineNumber="56" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="auto" opType="writereq" coreId="113" contextFuncName="consumer" bitwidth="1" opcode="writeresp" nodeLabel="5.0" nodeLatency="4" m_display="0" m_delay="7.3" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="56" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln56" lineNumber="56" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreId="552837880" contextFuncName="consumer" opcode="br" nodeLabel="9.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="56" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+      <controlInputObjs>.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="data_flow_example2_prueba1.cpp">
+      <validLinenumbers>56</validLinenumbers>
+      <validLinenumbers>61</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="39" name=".exit" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>._crit_edge.loopexit.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="_ln61" lineNumber="61" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreId="1441" contextFuncName="MVM_opcion7_super_mejorada" opcode="ret" nodeLabel="9.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="data_flow_example2_prueba1.cpp">
+      <validLinenumbers>61</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="141" pipe_depth="3" RegionName="VITIS_LOOP_53_1">
+    <basic_blocks id="29" name="block_29" type="BlockType">
+      <controlInputObjs>.lr.ph.i</controlInputObjs>
+      <controlInputObjs>.split.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>._crit_edge.loopexit.i</controlOutputObjs>
+      <controlOutputObjs>.split.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="j" lineNumber="53" originalName="j" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreId="609" contextFuncName="consumer" bitwidth="31" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+        <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>.split.i</controlInputObjs>
+        <controlInputObjs>.lr.ph.i</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="add_ln53" lineNumber="53" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." rtlName="add_ln53_fu_147_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="consumer" bitwidth="31" opcode="add" nodeLabel="2.0" m_display="0" m_delay="2.52" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+        <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="icmp_ln53_1" lineNumber="53" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." rtlName="icmp_ln53_1_fu_153_p2" opType="icmp" coreId="0" contextFuncName="consumer" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="2.47" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+        <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln53" lineNumber="53" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreId="49" contextFuncName="consumer" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+        <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="53" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split.i</controlInputObjs>
+        <controlInputObjs>._crit_edge.loopexit.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="data_flow_example2_prueba1.cpp">
+        <validLinenumbers>53</validLinenumbers>
+        <validLinenumbers>61</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="34" name=".split.i" type="BlockType">
+      <controlInputObjs>block_29</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_29</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp" lineNumber="145" originalName="tmp" fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="read" bitwidth="32" opcode="read" nodeLabel="3.0" m_display="0" m_delay="3.63" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="read"/>
+        <dataInputObjs>ss</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="gmem_addr_write_ln54" lineNumber="54" fileName="data_flow_example2_prueba1.cpp" fileDirectory=".." coreName="m_axi" implIndex="UNSUPPORTED" control="auto" coreId="113" contextFuncName="consumer" opcode="write" nodeLabel="4.0" m_display="0" m_delay="7.3" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="61" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="MVM_opcion7_super_mejorada"/>
+        <inlineStackInfo fileName="data_flow_example2_prueba1.cpp" linenumber="54" fileDirectory="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea" functionName="consumer"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln0" coreId="5089" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_29</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="data_flow_example2_prueba1.cpp">
+        <validLinenumbers>54</validLinenumbers>
+        <validLinenumbers>61</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>145</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <regnodes realName="gmem_addr_reg_168">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_188">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln53_1_reg_184">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_107">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="DESTINO_read_reg_158">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln53_reg_179">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln53_reg_164">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln53_reg_174">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <expressionNodes realName="gmem_addr_fu_138">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln53_1_fu_153">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_phi_fu_111">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln53_fu_134">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln53_fu_144">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_fu_147">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln53_fu_118">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln53_1_fu_124">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="grp_writeresp_fu_86">
+    <nodeIds>20</nodeIds>
+    <nodeIds>35</nodeIds>
+  </ioNodes>
+  <ioNodes realName="DESTINO_read_read_fu_80">
+    <nodeIds>10</nodeIds>
+  </ioNodes>
+  <ioNodes realName="activacion_read_read_fu_74">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_read_fu_92">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln54_write_fu_98">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioPorts name="DESTINO">
+    <contents name="read">
+      <nodeIds>10</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="activacion">
+    <contents name="read">
+      <nodeIds>9</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem"/>
+  <ioPorts name="ss">
+    <contents name="read">
+      <nodeIds>31</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="31" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="35" stage="5" latency="5"/>
+    </states>
+    <states id="7">
+      <operations id="35" stage="4" latency="5"/>
+    </states>
+    <states id="8">
+      <operations id="35" stage="3" latency="5"/>
+    </states>
+    <states id="9">
+      <operations id="35" stage="2" latency="5"/>
+    </states>
+    <states id="10">
+      <operations id="35" stage="1" latency="5"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="consumer" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="1">
+      <basicBlocks>15</basicBlocks>
+      <basicBlocks>22</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_53_1" mII="1" mDepth="3" mMinTripCount="1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="-1" mType="1">
+      <basicBlocks>29</basicBlocks>
+      <basicBlocks>34</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4" mMaxLatency="4">
+      <basicBlocks>37</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>39</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

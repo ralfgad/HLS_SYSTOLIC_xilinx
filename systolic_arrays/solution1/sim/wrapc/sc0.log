@@ -1,0 +1,6 @@
+   Build using "/opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_MVM_opcion7_super_mejorada.cpp
+   Compiling test_dataflow_example2.cpp_pre.cpp.tb.cpp
+   Compiling data_flow_example2_prueba1.cpp_pre.cpp.tb.cpp
+   Compiling apatb_MVM_opcion7_super_mejorada_ir.ll
+   Generating cosim.tv.exe

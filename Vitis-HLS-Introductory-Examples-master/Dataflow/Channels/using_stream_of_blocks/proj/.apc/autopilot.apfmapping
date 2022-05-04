@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="diamond.cpp" path="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/Vitis-HLS-Introductory-Examples-master/Dataflow/Channels/using_stream_of_blocks/diamond.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="result.golden.dat" path="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/Vitis-HLS-Introductory-Examples-master/Dataflow/Channels/using_stream_of_blocks/result.golden.dat"/>
+    <originFiles name="diamond_test.cpp" path="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/Vitis-HLS-Introductory-Examples-master/Dataflow/Channels/using_stream_of_blocks/diamond_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

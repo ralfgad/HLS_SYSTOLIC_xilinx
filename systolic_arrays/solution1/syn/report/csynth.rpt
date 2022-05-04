@@ -1,0 +1,31 @@
+
+
+================================================================
+== Synthesis Summary Report of 'MVM_opcion7_super_mejorada'
+================================================================
++ General Information: 
+    * Date:           Wed May  4 09:44:12 2022
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        systolic_arrays
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------+--------+-------+---------+--------+----------+---------+------+----------+---------+----------+-----------+------------+-----+
+    |               Modules               |  Issue |       | Latency | Latency| Iteration|         | Trip |          |         |          |           |            |     |
+    |               & Loops               |  Type  | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   |    DSP   |     FF    |     LUT    | URAM|
+    +-------------------------------------+--------+-------+---------+--------+----------+---------+------+----------+---------+----------+-----------+------------+-----+
+    |+ MVM_opcion7_super_mejorada*        |  Timing|   7.21|        -|       -|         -|        -|     -|  dataflow|  2 (~0%)|  37 (16%)|  6769 (6%)|  9084 (17%)|    -|
+    | + grp_layer1_fu_154                 |  Timing|   7.21|        -|       -|         -|        -|     -|        no|        -|  37 (16%)|  3831 (3%)|  6433 (12%)|    -|
+    |  o VITIS_LOOP_35_1                  |       -|  -7.30|        -|       -|         -|        -|     -|        no|        -|         -|          -|           -|    -|
+    |   o VITIS_LOOP_37_2                 |      II|  -7.30|        -|       -|        11|        4|     -|       yes|        -|         -|          -|           -|    -|
+    | + grp_producer3_fu_164              |  Timing|   0.00|        -|       -|         -|        -|     -|        no|        -|         -|  1206 (1%)|    812 (1%)|    -|
+    |  o VITIS_LOOP_13_1_VITIS_LOOP_15_2  |      II|  -7.30|        -|       -|        13|        2|     -|       yes|        -|         -|          -|           -|    -|
+    | + grp_consumer_fu_180               |  Timing|   0.00|        -|       -|         -|        -|     -|        no|        -|         -|  205 (~0%)|   227 (~0%)|    -|
+    |  o VITIS_LOOP_53_1                  |       -|  -7.30|        -|       -|         3|        1|     -|       yes|        -|         -|          -|           -|    -|
+    +-------------------------------------+--------+-------+---------+--------+----------+---------+------+----------+---------+----------+-----------+------------+-----+
+

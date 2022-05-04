@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="data_flow_example2_prueba1.cpp" path="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/data_flow_example2_prueba1.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_dataflow_example2.cpp" path="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/test_dataflow_example2.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

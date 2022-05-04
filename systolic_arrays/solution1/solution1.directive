@@ -1,0 +1,10 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="MVM_opcion7_super_mejorada" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="MVM_opcion7_super_mejorada"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

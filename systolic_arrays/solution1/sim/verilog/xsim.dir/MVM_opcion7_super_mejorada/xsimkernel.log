@@ -1,0 +1,7 @@
+Running: xsim.dir/MVM_opcion7_super_mejorada/xsimk -simmode gui -wdb MVM_opcion7_super_mejorada.wdb -simrunnum 0 -socket 43871
+Design successfully loaded
+Design Loading Memory Usage: 55112 KB (Peak: 55244 KB)
+Design Loading CPU Usage: 150 ms
+Simulation completed
+Simulation Memory Usage: 153652 KB (Peak: 194380 KB)
+Simulation CPU Usage: 33850 ms

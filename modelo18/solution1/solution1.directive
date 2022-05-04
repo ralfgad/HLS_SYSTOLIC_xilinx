@@ -1,0 +1,15 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="MVM_opcion_sistolica" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="MVM_opcion_sistolica"/>
+            </pragma>
+        </directive>
+        <directive functionName="MVM_opcion_sistolica" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="MVM_opcion_sistolica"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

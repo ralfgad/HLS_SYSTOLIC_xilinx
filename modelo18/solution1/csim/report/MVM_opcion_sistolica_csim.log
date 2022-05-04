@@ -1,0 +1,41 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../Mis_tasks_mejora_grano_fino_V_H_V_best21.cpp in debug mode
+   Generating csim.exe
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream '' is read while empty, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<float, 0>.7' contains leftover data, which may result in RTL simulation hanging.
+ERROR: C_obtenido[0] = 0.191793 != -0.067785
+ERROR: C_obtenido[1] = -0.049421 != 0.020270
+ERROR: C_obtenido[2] = 0.108284 != 0.138401
+ERROR: C_obtenido[3] = -0.090881 != -0.042876
+ERROR: C_obtenido[4] = 0.078236 != -0.101446
+ERROR: C_obtenido[5] = -0.154707 != -0.374795
+ERROR: C_obtenido[6] = 0.203559 != 0.331622
+ERROR: C_obtenido[7] = 0.183186 != 0.134038
+ERROR: C_obtenido[8] = 0.081796 != 0.119944
+ERROR: C_obtenido[9] = 0.124341 != 0.030373
+ERROR: C_obtenido[10] = -0.128710 != -0.180999
+ERROR: C_obtenido[11] = 0.029805 != -0.019329
+ERROR: C_obtenido[12] = 0.159130 != 0.052559
+ERROR: C_obtenido[13] = 0.051724 != 0.360503
+ERROR: C_obtenido[14] = 0.003083 != -0.221776
+ERROR: C_obtenido[15] = -0.074632 != 0.215181
+FAILED
+The maximum depth reached by any of the 15 hls::stream() instances in the design is 32
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Mis_tasks_mejora_grano_fino_V_H_V_best21.cpp" path="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/Mis_tasks_mejora_grano_fino_V_H_V_best21.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_dataflow_modelo18.cpp" path="/home/rgadea/pruebas_HLS_XILINX_2022/rgadea/test_dataflow_modelo18.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

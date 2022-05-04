@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [HLS 200-101] 'set_part': Argument 'value' requires a value!&#xA;SYNTAX &#xA;  set_part &lt;value> [OPTIONS]&#xA;    value :  &lt;string>  (required)&#xA;    -board &lt;string> &#xA;&#xA;&#xA;SEE ALSO&#xA;  www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=vitis+doc;d=rpg1583259720879.html&#xA;&#xA;&#xA;command 'set_part' returned error code&#xA;    while executing&#xA;&quot;source /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/Vitis-HLS-Introductory-Examples-master/Dataflow/Channels/using_stream_of_blocks/proj/solution1/csim...&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/rgadea/pruebas_HLS_XILINX_2022/rgadea/Vitis-HLS-Introductory-Examples-master/Dataflow/Channels/using_stream_of_blocks/proj/solution1/c...&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$newargs&quot;&#xA;    (procedure &quot;hls_proc&quot; line 16)&#xA;    invoked from within&#xA;&quot;hls_proc [info nameofexecutable] $argv&quot;&#xA;" projectName="proj" solutionName="solution1" date="2022-04-13T11:57:13.259+0200"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
